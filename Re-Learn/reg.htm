@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Simple Registration</h2>
+        <div>
+            <label for=''>Name</label>
+            <input type="text" id="Name">
+        </div>
+
+        <div>
+            <label for=''>Gender</label>
+            <select name="" id="Gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+
+        <div>
+            <button type='submit' id="saveButton">Save</button>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+        </tr>
+        <tbody id="userList"></tbody>
+    </table>
+
+    <script src = 'reg.js'></script>
+</body>
+</html>
