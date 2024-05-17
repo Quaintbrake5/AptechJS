@@ -991,7 +991,7 @@ function getCountry(employees, country) {
 function highestPaidEmployeeByCountry(employees, country) {
   let employeeCountries = getCountry(employees,country);
   let highestPaid = employeeCountries[0];
-  for (let i = 0; i < employeeCountries.length; i++){
+  for (let i = 0; index < employeeCountries.length; i++){
     if (Number(employeeCountries[i].salary) > Number(highestPaid.salary)){
       highestPaid = employeeCountries[i];
     }

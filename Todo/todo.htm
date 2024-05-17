@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+    <main>
+        <ul id="todoList">
+
+            <li>
+                <input type="checkbox" class="taskCheckbox" onclick="toggleDone(this)"/>
+                <span class="taskDescription">Buy groceries</span>
+                <i class="far fa-trash-alt" onclick="deleteTask(this)"></i>
+            </li>
+
+            <li>
+                <form onsubmit="addTask()"></form>
+                <input type="text" id="newTaskInput" placeholder="Add a task...">
+                <i class="fas fa-plus" onclick="addTask()"></i>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <input type="text" id="todoInput" placeholder="Enter a todo...">
+        <button id="addTodo">Add</button>
+        <button id="clearTodos">Clear</button>
+    </footer>
+    <script src="todo.js"></script>
+</body>
+</html>

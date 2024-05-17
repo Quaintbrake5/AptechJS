@@ -68,14 +68,3 @@ console.log(result);
                                     //                          console.log(nums[j])
                                     //                      }
                                     //                  }
-let no = 10;
-for (let i = 1; i <= no ; i+=5) {
-    console.log(`$(i): I love you`);
-}
-
-//sum numbers between 1 to 10
-
-let sum = 0;
-for(let i = 0; i<=0; i++){
-    sum+=i
-}
