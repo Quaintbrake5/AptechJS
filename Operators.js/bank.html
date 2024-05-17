@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Bank App</h2>
+    <script>
+    let accountNumber = prompt("Account Number");
+    let bank = prompt("Bank name");
+    if (accountNumber === "0212255183" && bank === "GTB"){
+   
+    let input = prompt("Kindly select from the menu below;\n1: Deposit\n2: Withdrawal\n3: Change Pin\n4: Inquiry\n5: Exit")
+    if (input === "1"){
+        document.write("2000 Naira has been deposited to your account.")
+    } else if (input === "2"){
+        document.write("2000 Naira has been withdrawn from your account.")
+    } else if (input === "3"){
+        document.write("PIN has successfully been changed.")
+    } else if (input === "4"){
+        document.write("Your account balance is 2000 Naira.")
+    } else if (input === "5"){
+        document.write("Bye Bye.")
+    }
+    } else{
+        document.write("Invalid credentials")
+    }
+
+    // let option = prompt("Select from menu:\n1: Deposit\n2: Transfer\n3: Exit");
+
+    // switch (option){
+    //     case '1':
+    //         console.log("")
+    // }
+
+    <!-- function bankAction() {
+        
+    } -->
+    </script>
+</body>
+</html>

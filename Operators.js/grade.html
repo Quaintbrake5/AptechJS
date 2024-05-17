@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Student Grade System</h2>
+    <script>
+        const score = prompt("Enter your Score!");
+        let grade = ""; 
+        if(score > 70 && score <=100){
+            grade = "A";
+        } else if(score >= 60 && score < 70){
+            grade = "B";
+        } else if(score >= 50 && score < 60){
+            grade = "C";
+        } else if(score >= 40 && score < 50){
+            grade = "D";
+        } else{
+            grade = "F";
+        }
+        document.write("<div style= 'background-color:blue; color:white; '>Grade: "+grade+" </div>")
+    </script>       
+</body>
+</html>
