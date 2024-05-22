@@ -15,9 +15,10 @@
 }
 
 body{
-    background-color: darkgrey;
-    background-image: url(Road-Traffic-Light-1920-x-1080.jpg);
-    height: fit-content;
+    max-width: 100%;
+    background-size: cover; /* This will make sure the image covers the entire element */
+    background-position: center center; /* This will center the image */
+    background-color: whitesmoke;
 }
 
 .container{
@@ -27,12 +28,12 @@ body{
 }
 
 .form_container{
-    border: 3px solid black;
+    border: black ;
     border-radius: 30px;
-    width: 97%;
+    width: 50%;
     margin: 30px auto;
     padding: 50px 30px;
-    background-color: whitesmoke;
+    background-color: rgba(112, 128, 144, 0.224);
 }
 
 form h2{
@@ -55,13 +56,16 @@ form h2{
 
 .form_container button{
     margin-top: 10px;
-    width: 100%;
-    padding: 12px 24px;
+    width: 50%;
+    padding: 12px 14px;
     font-size: 16px;
     background-color: royalblue;
-    color: white;
+    color: black;
     border: none;
-    border-radius: 32px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
 }
 
 .input_container.input{
@@ -78,6 +82,22 @@ form h2{
 
 button{
     cursor: pointer;
+}
+
+input{
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(112, 128, 144, 0.363);
+    color: black;
+}
+
+select{
+    height: 45px;
+    border-radius: 5px; 
+    background-color: rgba(112, 128, 144, 0.363);
+    border: none;
+    color: black;
 }
 
 table.offenderDetails {
